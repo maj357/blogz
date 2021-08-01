@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Useful meta tags -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow">
+  <meta name="google" content="notranslate">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../assets/images/x-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  
+  <title>Blogz | Login</title></head>
+
+<body>
+
+  <div id="page" class="page">
+    <header class="header">
+      <div class="header__left">
+        <nav class="nav">
+          <ul class="nav__item">
+            <li class="nav__item-list">
+              <a class="nav__item-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item-list">
+              <a class="nav__item-link subnav" href="#">Статьи</a>
+              <ul class="subnav__item">
+                <li class="subnav__item-list">
+                  <a class="subnav__item-link" href="post.html">Создание сайтов</a>
+                </li>
+                <li class="subnav__item-list">
+                  <a class="subnav__item-link" href="#">Интернет-маркетинг</a>
+                </li>
+                <li class="subnav__item-list">
+                  <a class="subnav__item-link" href="#">Продвижение видео</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item-list">
+              <a class="nav__item-link" href="about.html">Обо мне</a>
+            </li>
+            <li class="nav__item-list">
+              <a class="nav__item-link" href="works.html">Проекты</a>
+            </li>
+            <li class="nav__item-list">
+              <a class="nav__item-link" href="advertising.html">Реклама</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <button id="sidebarToggle" class="burger active" type="button">
+          <span>Открыть меню</span>
+        </button>
+    
+      </div>
+      <div class="header__right">
+        <nav class="nav">
+          <ul class="nav__item">
+            <li class="nav__item-list">
+              <a class="nav__item-link" href="signup.html">Войти</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="header__search" action="search.html" method="get">
+          <input class="header__search-input" type="text" placeholder="Поиск по блогу">
+        </form>
+      </div>
+    </header>
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar__header">
+        <img src="../assets/images/sidebar/poster.jpg" alt="sidebar image">
+      </div>
+      <div class="sidebar__content">
+        <div class="profile">
+          <img class="profile__avatar" src="../assets/images/sidebar/avatar.jpg" alt="avatar">
+          <div class="profile__name">Богданчик</div>
+          <div class="profile__prof">блог front-end разработчика</div>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img src="../assets/images/sidebar/instagram.svg" alt=" Maj instagram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img src="../assets/images/sidebar/vk.svg" alt=" Maj vk">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img src="../assets/images/sidebar/pinterest.svg" alt=" Maj pinterest">
+              </a>
+            </li>
+          </ul>
+          <div class="profile__text">
+            <p>
+              Front-end разработчик. Практик верстки сайтов.
+              Созданием сайтов занимаюсь с 2021 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в
+              создании сайтов различной сложности.
+            </p>
+          </div>
+        </div>
+    
+        <nav class="nav nav--mobile">
+          <ul class="nav__item">
+            <li class="nav__item-list">
+              <a class="nav__item-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item-list">
+              <a class="nav__item-link subnav" href="#">Статьи</a>
+              <ul class="subnav__item">
+                <li class="subnav__item-list">
+                  <a class="subnav__item-link" href="post.html">Создание сайтов</a>
+                </li>
+                <li class="subnav__item-list">
+                  <a class="subnav__item-link" href="#">Интернет-маркетинг</a>
+                </li>
+                <li class="subnav__item-list">
+                  <a class="subnav__item-link" href="#">Продвижение видео</a>
+                </li>
+              </ul>
+            <li class="nav__item-list">
+              <a class="nav__item-link" href="about.html">Обо мне</a>
+            </li>
+            <li class="nav__item-list">
+              <a class="nav__item-link" href="works.html">Проекты</a>
+            </li>
+            <li class="nav__item-list">
+              <a class="nav__item-link" href="advertising.html">Реклама</a>
+            </li>
+            <li class="nav__item-list">
+              <a class="nav__item-link" href="signup.html">Войти</a>
+            </li>
+          </ul>
+        </nav>
+    
+      </div>
+      <div class="sidebar__footer">
+        <a class="btn btn--red" href="#">Мои работы</a>
+        <button class="btn btn--blue" type="button" data-modal="contact-modal">Написать мне</button>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="container">
+        
+        <div class="main--center">
+          <h1 class="page__title page__title--center">Войти</h1>
+          
+          <form class="form form--login" method="post">
+            <div class="form__group">
+              <input class="form__group-input" type="email" placeholder="Ваш email">
+              <span class="form__group-line"></span>
+            </div>
+            <div class="form__group">
+              <input class="form__group-input" type="password" placeholder="Пароль">
+              <span class="form__group-line"></span>
+            </div>
+            <div class="form__footer form__footer--center">
+              <button type="submit" class="login__btn">Войти</button>
+            </div>
+            <ul class="form__footer-list">
+              <li>
+                <a href="reset.html">восстановить</a>
+              </li>
+              <li>
+                <a href="profile.html">регистрация</a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+
+  <div id="story-modal" class="modal">
+    <div class="modal__content modal__content--story">
+      <video class="modal__video" src="" poster="../assets/images/video-poster.jpg"></video>
+    </div>
+  </div>  <div id="contact-modal" class="modal">
+    <div class="modal__content">
+      <button class="modal__close" type="button">
+        <img src="../assets/images/close.svg" alt="close button">
+      </button>
+      <form class="form form--login" method="post">
+        <div class="form__group">
+          <input class="form__group-input" type="text" placeholder="Ваше имя">
+          <span class="form__group-line"></span>
+        </div>
+        <div class="form__group">
+          <input class="form__group-input" type="email" placeholder="Ваш email">
+          <span class="form__group-line"></span>
+        </div>
+        <div class="form__group">
+          <textarea class="form__group-area" placeholder="Текст комментария"></textarea>
+          <span class="form__group-line"></span>
+        </div>
+        <div class="form__footer">
+          <button type="submit" class="login__btn" style="margin: 0 auto;">Отправить</button>
+        </div>
+        <ul class="form__footer-list">
+          <li>
+            <a href="mailto:info@mywebsite.ru">e-mail: info@mywebsite.ru</a>
+          </li>
+          <li>
+            <a href="tel:+94323285622">тел: +943-232-856-22</a>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>  <div class="modal">
+    <div class="modal__content modal__content--social">
+      <button class="modal__close" type="button">
+        <img src="../assets/images/close.svg" alt="close button">
+      </button>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="../assets/images/facebook.svg" alt="facebook icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="../assets/images/twitter.svg" alt="twitter icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="../assets/images/vk.svg" alt="vk icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="../assets/images/copy.svg" alt="copy icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
