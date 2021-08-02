@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./assets/images/x-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <link rel="stylesheet" href="assets/css/style.min.css">
   
   <title>Blogz | Login</title></head>
@@ -183,7 +184,10 @@
 
   <div id="story-modal" class="modal">
     <div class="modal__content modal__content--story">
-      <video class="modal__video" src="" poster="./assets/images/video-poster.jpg"></video>
+      <video class="modal__video" autoplay controls poster="./assets/images/video-poster.jpg">
+        <source src="../assets/images/video/01.webm" type="video/webm">
+        <source src="../assets/images/video/01.mp4" type="video/mp4">
+      </video>
     </div>
   </div>  <div id="contact-modal" class="modal">
     <div class="modal__content">
@@ -245,7 +249,7 @@
       </ul>
     </div>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 

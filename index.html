@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./assets/images/x-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <link rel="stylesheet" href="assets/css/style.min.css">
   
   <title>Blogz | Home</title></head>
@@ -159,7 +160,7 @@
             </div>
             <time class="stories__date" datatime="2021-07-21">2021-07-21</time>
           </div>
-          <div class="stories__item">
+          <div class="stories__item" data-modal="story-modal">
             <img class="stories__item-img" src="./assets/images/stories/02.jpg" alt="stories picture">
             <div class="stories__title">
               Заканчиваю
@@ -167,7 +168,7 @@
             </div>
             <time class="stories__date" datatime="2021-07-15">2021-07-15</time>
           </div>
-          <div class="stories__item">
+          <div class="stories__item" data-modal="story-modal">
             <img class="stories__item-img" src="./assets/images/stories/03.jpg" alt="stories picture">
             <div class="stories__title">
               Переехал в новую
@@ -175,10 +176,38 @@
             </div>
             <time class="stories__date" datatime="2020-12-01">2020-12-01</time>
           </div>
-          <div class="stories__item">
+          <div class="stories__item" data-modal="story-modal">
             <img class="stories__item-img" src="./assets/images/stories/04.jpg" alt="stories picture">
             <div class="stories__title">
               Осень пришла!
+            </div>
+            <time class="stories__date" datatime="2020-09-21">2020-09-21</time>
+          </div>
+          <div class="stories__item" data-modal="story-modal">
+            <img class="stories__item-img" src="./assets/images/stories/05.jpg" alt="stories picture">
+            <div class="stories__title">
+              Покатушки
+            </div>
+            <time class="stories__date" datatime="2020-09-21">2021-09-21</time>
+          </div>
+          <div class="stories__item" data-modal="story-modal">
+            <img class="stories__item-img" src="./assets/images/stories/06.jpg" alt="stories picture">
+            <div class="stories__title">
+              Семья
+            </div>
+            <time class="stories__date" datatime="2020-09-21">2021-09-22</time>
+          </div>
+          <div class="stories__item" data-modal="story-modal">
+            <img class="stories__item-img" src="./assets/images/stories/04.jpg" alt="stories picture">
+            <div class="stories__title">
+              Париж :)
+            </div>
+            <time class="stories__date" datatime="2020-09-21">2021-10-05</time>
+          </div>
+          <div class="stories__item" data-modal="story-modal">
+            <img class="stories__item-img" src="./assets/images/stories/08.jpg" alt="stories picture">
+            <div class="stories__title">
+              Котик
             </div>
             <time class="stories__date" datatime="2020-09-21">2020-09-21</time>
           </div>
@@ -186,7 +215,8 @@
         
         <div class="post">
           <form class="post__form" method="post">
-            <textarea class="post__form-textarea" name="post-text" data-autoresize placeholder="Поделиться постом..."></textarea>
+            <textarea class="post__form-textarea" name="post-text" data-autoresize
+              placeholder="Поделиться постом..."></textarea>
             <div class="post__actions">
               <label class="post__file" for="post_file">
                 <input id="post_file" type="file">
@@ -241,12 +271,12 @@
           </div>
         </article>
         
-        <article class="state">
+        <article class="state state--not_padding">
           <div class="state__header">
-            <div class="embed">
-              <iframe src="https://www.youtube.com/embed/J2eHkE8L36I" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="state__popup">
+              <a class="state__popup-play" data-fancybox href="https://youtu.be/X9zS9D7YcI0">
+                <img class="state__popup-imgbtn" src="./assets/images/play.svg" alt="play icon">
+              </a>
             </div>
           </div>
           <div class="state__content">
@@ -278,7 +308,9 @@
               <a href="#">Как я сходил на FrontEnd Conf 2021?</a>
             </h2>
             <p class="state__text">
-              Специалист в области компьютерной графики и оптимизации быстродействия. Разрабатывает самый дорогой в мире WebGL-проект. В прошлом участвовал в разработке операционной системы на JS для Liberty Global. Ведет воркшоп http://challengingnative.com, организатор конференций React Summit, JSNation, React Day Berlin.
+              Специалист в области компьютерной графики и оптимизации быстродействия. Разрабатывает самый дорогой в мире
+              WebGL-проект. В прошлом участвовал в разработке операционной системы на JS для Liberty Global. Ведет воркшоп
+              http://challengingnative.com, организатор конференций React Summit, JSNation, React Day Berlin.
             </p>
           </div>
           <div class="state__footer">
@@ -318,7 +350,10 @@
 
   <div id="story-modal" class="modal">
     <div class="modal__content modal__content--story">
-      <video class="modal__video" src="" poster="./assets/images/video-poster.jpg"></video>
+      <video class="modal__video" autoplay controls poster="./assets/images/video-poster.jpg">
+        <source src="../assets/images/video/01.webm" type="video/webm">
+        <source src="../assets/images/video/01.mp4" type="video/mp4">
+      </video>
     </div>
   </div>  <div id="contact-modal" class="modal">
     <div class="modal__content">
@@ -380,7 +415,7 @@
       </ul>
     </div>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 
