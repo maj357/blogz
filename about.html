@@ -114,8 +114,8 @@
               <a class="nav__item-link" href="index.html">Главная</a>
             </li>
             <li class="nav__item-list">
-              <a class="nav__item-link subnav" href="#">Статьи</a>
-              <ul class="subnav__item">
+              <a class="nav__item-link subnav accordion" href="#">Статьи</a>
+              <ul class="panel">
                 <li class="subnav__item-list">
                   <a class="subnav__item-link" href="post.html">Создание сайтов</a>
                 </li>
@@ -126,6 +126,7 @@
                   <a class="subnav__item-link" href="#">Продвижение видео</a>
                 </li>
               </ul>
+            </li>
             <li class="nav__item-list">
               <a class="nav__item-link" href="about.html">Обо мне</a>
             </li>
@@ -143,14 +144,33 @@
     
       </div>
       <div class="sidebar__footer">
-        <a class="btn btn--red" href="#">Мои работы</a>
+        <a class="btn btn--red" href="my-works.html">Мои работы</a>
         <button class="btn btn--blue" type="button" data-modal="contact-modal">Написать мне</button>
       </div>
     </aside>
     <main class="main">
       <div class="container">
         
-        Обо мне
+        <h1 class="page__title">Обо мне</h1>
+        
+        <article class="work">
+          <div class="work__preview">
+            <picture>
+              <source srcset="./assets/images/works/03.jpg" media="(max-width: 575px)">
+              <img src="./assets/images/works/03.jpg" alt="Work picture">
+            </picture>
+          </div>
+          <div class="work__content">
+            <div class="work__description">
+              <p>Я Front-End developer в начале своего пути. На данный момент, я активно интересуюсь CMS системами (работал с
+                WordPress и Tilda). Постоянно развиваюсь и изучаю новые фишки, которые позволят делать более уникальный продукт.
+                У меня есть хорошие знания HTML (HTML5) и CSS (CSS3). Начинаю изучать JavaScript. Работал с адаптивной версткой
+                при помощи Bootstrap 4. Был небольшой опыт работы с MySQL. Меня не пугает задача разбираться в чужом коде. Готов
+                развиваться, делать выводы из допущенных ошибок и учиться новому.
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
     </main>
   </div>
